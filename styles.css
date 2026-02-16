@@ -1,0 +1,341 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(45deg, #ff6b6b, #f7a9b8);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%; /* Pastikan lebar konten mengikuti lebar layar */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Agar tombol dapat dibungkus ke baris baru */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #45a049;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+}
+
+.secondary-btn:hover {
+    background-color: #fff;
+    color: #4CAF50;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Ukuran font lebih kecil pada perangkat kecil */
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column; /* Tombol ditampilkan secara vertikal pada perangkat kecil */
+    }
+
+    .cta-button {
+        width: 100%; /* Tombol di perangkat kecil akan lebar penuh */
+        margin-bottom: 10px;
+    }
+}
+
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    padding: 30px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    margin: 20px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+.feature-item p {
+    font-size: 1rem;
+}
+
+/* Perubahan Responsif - Menyusun Kolom ke Baris di Mobile */
+@media (max-width: 768px) {
+    /* Ubah kolom menjadi baris vertikal pada perangkat mobile */
+    .feature-item {
+        display: block; /* Menampilkan setiap item dalam baris */
+        width: 100%; /* Lebar penuh untuk setiap elemen */
+        margin: 10px 0; /* Mengurangi margin agar lebih rapat */
+    }
+
+    /* Atur ukuran font di perangkat kecil */
+    .features h2 {
+        font-size: 2rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .feature-item p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Testimonial Section */
+.testimonials {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #333;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff; /* Ubah warna agar lebih terlihat di latar belakang gelap */
+}
+
+.testimonial-item {
+    background-color: #444; /* Background sedikit lebih terang agar kontras */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px; /* Lebar maksimum testimonial */
+    margin: 20px auto; /* Mengatur margin agar item berada di tengah */
+}
+
+.testimonial-item p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ddd; /* Warna teks yang lebih terang */
+    margin-bottom: 15px;
+}
+
+.testimonial-item .client-info {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ff6b6b; /* Warna nama klien yang mencolok */
+}
+
+.testimonial-item .client-info span {
+    font-weight: normal; /* Nama klien lebih tebal, jabatan normal */
+    color: #bbb;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    .testimonial-item {
+        padding: 15px;
+        max-width: 100%; /* Lebar penuh pada perangkat kecil */
+    }
+
+    .testimonials h2 {
+        font-size: 2rem;
+    }
+
+    .testimonial-item p {
+        font-size: 1rem; /* Ukuran font lebih kecil untuk perangkat kecil */
+    }
+
+    .testimonial-item .client-info {
+        font-size: 0.9rem; /* Menyesuaikan ukuran teks nama dan jabatan */
+    }
+}
+
+
+/* Pricing Section */
+.pricing {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 105, 180, 0.8), rgba(255, 159, 64, 0.8));
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.pricing-plan {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 40px;
+    background-color: #333;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.pricing-plan h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6b6b;
+}
+
+.pricing-plan p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.pricing-plan .cta-button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-plan .cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Perubahan Responsif - Menyusun Kolom ke Baris di Mobile */
+@media (max-width: 768px) {
+    .pricing-plan {
+        display: block; /* Menampilkan setiap plan dalam baris */
+        width: 100%; /* Lebar penuh untuk setiap elemen */
+        margin: 10px 0; /* Mengurangi margin agar lebih rapat */
+    }
+
+    .pricing h2 {
+        font-size: 2rem;
+    }
+
+    .pricing-plan h3 {
+        font-size: 1.5rem;
+    }
+
+    .pricing-plan p {
+        font-size: 1.1rem;
+    }
+}
+
+/* FAQ Section */
+.faq {
+    padding: 60px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.faq h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Perubahan Responsif - Menyusun Kolom ke Baris di Mobile */
+@media (max-width: 768px) {
+    .faq-item {
+        margin-bottom: 10px;
+    }
+
+    .faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item h4 {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 10px;
+}
